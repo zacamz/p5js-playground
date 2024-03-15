@@ -1,8 +1,11 @@
 let drops = []
 
 function setup() {
-    createCanvas(400, 400)
-    for (let i = 0; i <500; i+= 1){
+    let canvas = createCanvas(windowWidth, windowHeight)
+    canvas.position(0,0)
+    canvas.style("z-index","-1")
+
+    for (let i = 0; i <windowWidth; i+= 1){
         drops[i] = new Drop()
     }
 };
