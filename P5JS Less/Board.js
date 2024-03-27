@@ -63,6 +63,7 @@ class Board {
         this.boardLength = numberOfPlayers == 2 ? 3 : 4 
     }
     buildCoaster(){
+        let coaster = square(50,50,500,50)
        console.log("working")
     }
     renderBoard(){
